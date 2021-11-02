@@ -12,7 +12,7 @@ terraform {
   required_version = ">= 0.14"
 
   backend "remote" {
-    organization = "REPLACE_ME"
+    organization = "BMJ"
 
     workspaces {
       name = "gh-actions-demo"
@@ -24,7 +24,6 @@ terraform {
 provider "aws" {
   region = "eu-west-1"
 }
-
 
 
 resource "random_pet" "sg" {}
